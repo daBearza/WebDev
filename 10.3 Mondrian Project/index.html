@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .layout{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      /* grid-template-rows: 1fr 1fr 1fr ; */
+      height: 100vh;
+    }
+    .container{
+      
+      grid-area: 2/2/3/3;
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      background-color: black;
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .white{
+      background-color: #F0F1EC;
+    }
+    .blue{
+      background-color: #004592;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+    .black{
+      background-color: #232629;
+    }
+
+    .block1{
+      grid-area: 1/1/2/2;
+    }
+    .block2{
+      grid-area: 1/2/2/5;
+    }
+    .block3{
+      grid-area: 2/1/4/2;
+    }
+    .block4{
+      grid-area: 2/2/4/4;
+    }
+    .block5{
+      grid-area: 2/4/3/5;
+      border-bottom: 10px solid black;
+    }
+    .block6{
+      grid-area: 4/1/5/2;
+    }
+    .block7{
+      grid-area: 4/2/5/3;
+    }
+    .block8{
+      grid-area: 4/3/5/4;
+    }
+    .block9{
+      grid-area: 3/4/5/5;
+    }
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="layout">
+   <div class="container">
+    <div class="red block1"></div>
+    <div class="white block2"></div>
+    <div class="white block3"></div>
+    <div class="white block4"></div>
+    <div class="blue block5"></div>
+    <div class="white block6"></div>
+    <div class="yellow block7"></div>
+    <div class="black block8"></div>
+    <div class="white block9"></div>
+    </div>
+  </div>
+</body>
+
+</html>
